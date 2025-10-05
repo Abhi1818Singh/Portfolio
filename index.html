@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Singh - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+    }
+
+    body {
+
+        overflow-x: hidden;
+        background: linear-gradient(145deg, #0f172a, #1e293b);
+        color: #f1f5f9;
+        font-family: 'Poppins', sans-serif;
+        transition: background 0.5s ease;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 2px solid rgb(60, 60, 60);
+        color: white;
+        padding: 10px;
+        font-size: medium;
+        font-family: "Nova Square", system-ui;
+        transition: transform 0.5s;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        margin-top: 40px;
+        margin-left: 380px;
+        border: 4px solid rgb(248, 246, 246);
+        border-radius: 25px;
+        z-index: 1000;
+    }
+
+    nav:hover {
+        transform: scale(1.05);
+        /* background: gray; */
+    }
+
+    nav a {
+        color: rgb(249, 245, 245);
+        font-size: x-large;
+        font-family: "Nova Square", system-ui;
+        transition: transform 0.5s;
+        text-decoration: none !important;
+    }
+
+    nav a:hover {
+        color: #fbf7f7;
+    }
+
+    .nav1 {
+        transition: transform 0.5s;
+        cursor: pointer;
+        color: white;
+    }
+
+    .nav1:hover {
+        transform: scale(1.1);
+        color: black;
+    }
+
+    .nav2 {
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+
+    .nav2:hover {
+        transform: scale(1.1);
+        color: black;
+    }
+
+    .nav3 {
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+
+    .nav3:hover {
+        transform: scale(1.1);
+        color: black;
+    }
+
+    .nav4 {
+        transition: transform 0.5s;
+        cursor: pointer;
+    }
+
+    .nav4:hover {
+        transform: scale(1.1);
+        color: black;
+    }
+
+
+    section {
+        /* background-color: rgb(19, 19, 46); */
+        background: linear-gradient(135deg, #0c0c3d, #1f1f5c, #3a0ca3);
+        background-color: #000;
+        color: white;
+        display: flex;
+        gap: 100px;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        font-family: "Nova Square", system-ui;
+        /* height: 600px; */
+        height: 100vh;
+        width: auto;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+
+
+
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+
+        /* border:  3px solid black; */
+    }
+
+    span {
+        color: rgb(83, 55, 240);
+    }
+
+    /* ----> */
+    .name span {
+        /* background: linear-gradient(90deg, #8338ec, #3a86ff, #ffbe0b); */
+        background: linear-gradient(90deg, #55249a, #0654d2, #b98d15);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text {
+        margin-bottom: 50px;
+        margin-left: 80px;
+        /* font-size: 5rem; */
+    }
+
+    .button {
+        margin-left: 80px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: rgb(147, 147, 150);
+    }
+
+    .btn1 {
+        display: inline-block;
+        color: rgb(83, 55, 240);
+        border: 2px solid rgb(83, 55, 240);
+        /* color: #000;
+        border:2px solid #000; */
+        border-radius: 25px;
+        padding: 15px;
+        margin-right: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn2 {
+        display: inline-block;
+        color: rgb(83, 55, 240);
+        border: 2px solid rgb(83, 55, 240);
+        /* color: #000;
+        border:2px solid #000; */
+        border-radius: 25px;
+        padding: 15px;
+        margin-right: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn3 {
+        display: inline-block;
+        color: rgb(83, 55, 240);
+        border: 2px solid rgb(83, 55, 240);
+        /* color: #000;
+        border:2px solid #000; */
+        border-radius: 25px;
+        padding: 15px;
+        margin-right: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn1:hover {
+        color: white;
+        background-color: rgb(83, 55, 240);
+        transform: scale(1.1);
+
+    }
+
+    .btn2:hover {
+        color: white;
+        background-color: rgb(83, 55, 240);
+        transform: scale(1.1);
+
+    }
+
+    .btn3:hover {
+        color: white;
+        background-color: rgb(83, 55, 240);
+        transform: scale(1.1);
+
+    }
+
+
+    section img {
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        border: 2px solid rgb(83, 55, 240);
+        margin-right: 50px;
+        object-fit: cover;
+    }
+
+    .About {
+        /* height: 700px; */
+        height: 100vh;
+        width: auto;
+        /* background-color: #0c2e4e; */
+        background: linear-gradient(135deg, #0c0c3d, #1f1f5c, #3a0ca3);
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+
+
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .About h1 {
+        padding: 80px;
+        font-family: "Nova Square", system-ui;
+        color: rgb(250, 248, 248);
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .About h3 {
+        margin-left: 80px;
+        font-family: "Nova Square", system-ui;
+        margin-right: 80px;
+        color: rgb(249, 249, 250);
+    }
+
+    .About span {
+        color: rgb(242, 240, 240);
+        font-size: xx-large;
+        text-decoration: underline;
+        font-family: "Nova Square", system-ui;
+    }
+
+    .skills {
+        text-align: center;
+    }
+
+    /* ------->  */
+
+    .skills h3 {
+        border: 2px solid rgb(109, 107, 107);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px auto;
+        width: fit-content;
+        transition: transform 0.3s ease;
+    }
+
+    .skills h3:hover {
+        transform: scale(1.1);
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .aboutcontainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        /* responsive */
+    }
+
+    .aboutimg img {
+        width: 350px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 25px;
+        border: 3px solid rgba(246, 246, 248, 0.7);
+        margin-right: 100px;
+    }
+
+
+
+    .Projects {
+        height: 100vh;
+        /* height: 700px;÷\ */
+        width: auto;
+        /* background-color: rgb(6, 26, 113); */
+        background: linear-gradient(135deg, #0c0c3d, #1f1f5c, #3a0ca3);
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        display: grid;
+        grid-template-rows: auto;
+
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        padding: 20px 80px;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+
+    .Projects h1 {
+        padding: 80px;
+        font-family: "Nova Square", system-ui;
+        color: azure;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .Projects img {
+        height: 300px;
+        width: 500px;
+        margin-left: 80px;
+        border: 2px solid lightskyblue;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-radius: 15px;
+    }
+
+    .Projects video {
+        height: 320px;
+        width: 500px;
+        margin-left: 80px;
+        border: 2px solid lightskyblue;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .Projects p {
+        margin-top: 20px;
+        margin-left: 250px;
+        margin-right: 80px;
+        font-size: xx-large;
+        color: rgb(35, 172, 218);
+
+
+    }
+
+    .Projects h3 {
+        font-size: xx-large;
+        font-family: "Nova Square", system-ui;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* **** */
+
+    .Projects img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(238, 236, 236, 0.6);
+    }
+
+    .Projects video:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(238, 236, 236, 0.6);
+    }
+
+
+
+    .contact {
+        /* height: 700px; */
+        height: 100vh;
+        width: auto;
+        background: linear-gradient(135deg, #3e26c7, #000);
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        padding: 20px;
+
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .contact h1 {
+        color: white;
+        text-decoration: underline;
+        font-family: "Nova Square", system-ui;
+        padding: 80px;
+        /* margin-top: 80px;
+        margin-left: 80px; */
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .contact form {
+        /* margin-left: 80px; */
+        margin: auto;
+        text-align: center;
+        font-family: "Nova Square", system-ui;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+
+    }
+
+    .contact label {
+        font-size: x-large;
+        color: rgb(251, 247, 11);
+
+    }
+
+    .contact input {
+        width: 100%;
+        font-size: large;
+        background-color: black;
+        color: rgb(109, 107, 107);
+    }
+
+    .contact textarea {
+        width: 100%;
+        font-size: large;
+        background-color: black;
+        color: rgb(109, 107, 107);
+    }
+
+    .contact button {
+        padding: 10px;
+        border: 2px solid black;
+
+        color: white;
+        border-radius: 25px;
+        font-family: "Nova Square", system-ui;
+        width: 100%;
+        background-color: rgb(139, 146, 152);
+        color: black;
+
+    }
+
+    .contact button:hover {
+        background-color: rgb(38, 145, 199);
+        transform: scale(1.1);
+    }
+
+    .contact input,
+    .contact textarea {
+        border: 2px solid #3a0ca3;
+        border-radius: 8px;
+        padding: 10px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .contact input:focus,
+    .contact textarea:focus {
+        outline: none;
+        box-shadow: 0 0 30px #efeff0;
+    }
+
+
+
+    footer {
+        padding: 30px;
+        height: auto;
+        width: auto;
+        background-color: #000;
+        color: rgb(163, 164, 164);
+        font-size: large;
+        font-family: "Nova Square", system-ui;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        margin-bottom: 15px;
+        font-size: x-large;
+    }
+
+    footer a {
+        color: white;
+        gap: 20px;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+
+
+    /* ---------> MEDIA QUERY */
+    /* 🌐 RESPONSIVE MEDIA QUERIES */
+
+/* ======= Large Screens (Desktops >1200px) ======= */
+@media (min-width: 1200px) {
+    nav {
+        width: 50%;
+        margin-left: 380px;
+    }
+}
+
+/* ======= Medium Screens (Laptops/Tablets: 768px–1199px) ======= */
+@media (max-width: 1199px) {
+    nav {
+        width: 70%;
+        margin-left: 15%;
+        font-size: medium;
+        padding: 10px 15px;
+    }
+
+    section img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .About{
+        height: auto;
+        width: 100%;
+    }
+    .Projects{
+        height: auto;
+        width: 100%;
+    }
+   
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 20px 40px;
+    }
+
+    .Projects img,
+    .Projects video {
+        width: 400px;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    
+}
+
+/* ======= Tablets (600px–767px) ======= */
+@media (max-width: 767px) {
+    nav {
+        width: 85%;
+        margin: 20px auto;
+        font-size: small;
+    }
+    .About{
+        height: auto;
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 40px 20px;
+        width: 100%;
+    }
+
+    section img {
+        height: 280px;
+        width: 280px;
+        margin: 20px 0;
+    }
+
+    .text, .button {
+        margin: 0;
+    }
+
+    .btn1, .btn2, .btn3 {
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+    }
+
+    .aboutcontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutimg img {
+        margin: 30px 0;
+        height: 300px;
+        width: 250px;
+    }
+
+    .Projects {
+        height: auto;
+        width: 100%;
+        padding: 40px 20px;
+
+    }
+
+    .Projects img,
+    .Projects video {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .Projects p {
+        font-size: large;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .contact {
+        height: auto;
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    footer p {
+        font-size: large;
+    }
+}
+
+/* ======= Mobile Phones (Below 599px) ======= */
+@media (max-width: 599px) {
+    nav {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+        font-size: small;
+        margin: 10px auto;
+        border-width: 2px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+        height: auto;
+        width: 100%;
+        
+    }
+    section h1{
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 2rem;
+    
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    section img {
+        width: 220px;
+        height: 220px;
+        margin: 10px 0;
+    }
+    .Projects{
+        height: auto;
+        width: 100%;
+    }
+    .Projects img,
+    .Projects video {
+        width: 100%;
+        height: auto;
+    }
+.About{
+    height: auto;
+    /* width: auto; */
+    width: 100%;
+}
+    .aboutimg img {
+        width: 220px;
+        height: 250px;
+    }
+
+    .btn1, .btn2, .btn3 {
+        padding: 10px;
+        font-size: 1rem;
+        width: 80%;
+        margin: 8px auto;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: medium;
+    }
+
+    footer a {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .contact{
+         height: auto;
+    width: 100%;
+    }
+}
+
+
+
+
+    /* ------>  Extra  */
+
+    section,
+    .About,
+    .Projects,
+    .contact {
+        padding: 80px 60px;
+        box-sizing: border-box;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        padding: 18px 30px;
+        font-size: 1.2rem;
+        border-width: 3px;
+        border-radius: 35px;
+    }
+
+    section,
+    .About,
+    .Projects,
+    .contact {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 20px;
+        margin: 30px;
+        padding: 80px 60px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    .btn1:hover,
+    .btn2:hover,
+    .btn3:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(37, 99, 235, 0.7);
+    }
+
+    /* -----> Animations ------>  */
+    body {
+        background: linear-gradient(90deg, #0f172a, #0f172a, #1e293b, #000);
+        background-size: 400% 400%;
+        animation: gradientFlow 5s ease infinite;
+        color: #f1f5f9;
+        font-family: "Nova Square", system-ui;
+    }
+
+    @keyframes gradientFlow {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* ----- project */
+    .Projects video:hover,
+    .Projects img:hover {
+        transform: scale(1.05) translateY(-10px);
+        box-shadow: 0 0 25px rgba(37, 99, 235, 0.7);
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="nav1"><a href="#home">Home</a> </div>
+            <div class="nav2"><a href="#about">About</a> </div>
+            <div class="nav3"><a href="#project">Projects</a></div>
+            <div class="nav4"><a href="#contact">Contact</a></div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <div class="text">
+                    <h1 class="name"> <span> Abhishek Indradeo Singh </span></h1>
+                    <h2 class="name">I'm a Student at <span>Scaler School of Technology</span></h2>
+                    <p>I enjoy collaborating on tech communities,
+                        mentoring peers,and constantly learning new technologies! Other than this I also have interest
+                        in
+                        Swimming, Playing Cricket and Drawing.
+                    </p><br>
+                </div>
+                <div class="button">
+                    <a href="https://www.instagram.com/abhi._.1818/" target="_blank" class="btn1">Instagram</a>
+                    <a href="https://www.linkedin.com/in/abhishek-singh-67b75b377/" target="_blank"
+                        class="btn2">LinkedIn</a>
+                    <a href="https://github.com/Abhi1818Singh" target="_blank" class="btn3">Github </a>
+                </div>
+            </div>
+            <div class="img">
+                <img src="IMG_5081.jpeg" alt="profilephto">
+            </div>
+        </section>
+
+
+        <div class="About" id="about">
+            <h1> About me!</h1>
+            <div class="aboutcontainer">
+                <h3>Hi! I'm Abhishek Indradeo Singh, and I'm from Mumbai. I'm a first-year Computer Science student
+                    pursuing
+                    my
+                    BSc (Hons) in Computer Science from BITS Pilani (Online), while also learning new skills at Scaler
+                    School of
+                    Technology. </h3>
+                <br>
+                <br>
+                <br>
+                <div class="skills">
+                    <span>My Achievement and Skills:</span><br><br><br>
+                    <h3>💻 Technical Skills: HTML, CSS, JavaScript</h3>
+                    <h3>🏅 Achievements: Best Delegate at INMUN</h3>
+                    <h3>🌊 Sports & Activities: Swimming, Cricket, Drawing</h3>
+                    <h3>👥 Soft Skills: Leadership, Communication, Team Collaboration</h3>
+                </div>
+
+                <div class="aboutimg">
+                    <img src="about.png">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="Projects" id="project">
+            <h1>My Projects!</h1>
+            <div class="project-grid">
+                <div class="project1">
+                    <a href="https://moviefinding-abhishek.netlify.app/" target="_blank">
+                        <video src="MOVIEFINDER.mp4" autoplay loop muted playsinline></video>
+                    </a>
+                    <p> Movie Finder</p>
+                </div>
+
+
+
+                <div class="project2">
+                    <a href="https://alok6371.itch.io/funwrun" target="_blank">
+                        <video src="vide0.mp4" autoplay loop muted playsinline></video>
+                    </a>
+                    <p> Fun run Game</p>
+                </div>
+            </div>
+
+            <h3> More Coming Soon!🔜❤️</h3>
+        </div>
+
+        </div>
+
+
+        <div class="contact" id="contact">
+            <h1> Contact Me!</h1>
+            <form>
+                <!-- <label> Name</label> -->
+                <input type="text" placeholder="Your Name">
+                <br>
+                <br>
+                <br>
+
+                <!-- <label> Email</label> -->
+                <input type="email" placeholder="Email">
+                <br>
+                <br>
+                <br>
+                <!-- <label> Message</label> -->
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <br>
+                <br>
+                <button> Send Message </button>
+
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer>
+        <p> © All Rights Reserved | Abhishek Indradeo Singh</p>
+        <p> Empowering pixels through logic and design.</p>
+        <div class="social">
+            <a href="https://github.com/Abhi1818Singh" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhishek-singh-67b75b377/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/abhi._.1818/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
