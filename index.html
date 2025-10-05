@@ -265,7 +265,7 @@
     }
 
     .About h1 {
-        padding: 80px;
+        padding: 10px;
         font-family: "Nova Square", system-ui;
         color: rgb(250, 248, 248);
         text-decoration: underline;
@@ -276,7 +276,17 @@
         margin-left: 80px;
         font-family: "Nova Square", system-ui;
         margin-right: 80px;
-        color: rgb(249, 249, 250);
+        /* color: rgb(249, 249, 250); */
+        color: #a78bfa;
+    }
+    .About h2 {
+        margin-left: 80px;
+        font-family: "Nova Square", system-ui;
+        margin-right: 50px;
+        
+        
+        color: #fcfbfd;
+        text-decoration: underline;
     }
 
     .About span {
@@ -346,6 +356,8 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: 40px;
         padding: 20px 80px;
+        justify-content: center;
+        align-items: start;
     }
 
     .project-card {
@@ -368,11 +380,15 @@
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         border-radius: 15px;
     }
+    .project1, .project2 {
+  text-align: center;
+}
 
     .Projects video {
         height: 320px;
-        width: 500px;
-        margin-left: 80px;
+        max-width: 500px;
+        width: 100%;
+  
         border: 2px solid lightskyblue;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
         border-radius: 15px;
@@ -381,7 +397,7 @@
 
     .Projects p {
         margin-top: 20px;
-        margin-left: 250px;
+        text-align: center;
         margin-right: 80px;
         font-size: xx-large;
         color: rgb(35, 172, 218);
@@ -528,9 +544,9 @@
 
 
     /* ---------> MEDIA QUERY */
-    /* 🌐 RESPONSIVE MEDIA QUERIES */
+   
 
-/* ======= Large Screens (Desktops >1200px) ======= */
+/*  Large Screens */
 @media (min-width: 1200px) {
     nav {
         width: 50%;
@@ -538,7 +554,7 @@
     }
 }
 
-/* ======= Medium Screens (Laptops/Tablets: 768px–1199px) ======= */
+/* Medium Screens*/
 @media (max-width: 1199px) {
     nav {
         width: 70%;
@@ -577,7 +593,7 @@
     
 }
 
-/* ======= Tablets (600px–767px) ======= */
+/* Tablets*/
 @media (max-width: 767px) {
     nav {
         width: 85%;
@@ -656,7 +672,7 @@
     }
 }
 
-/* ======= Mobile Phones (Below 599px) ======= */
+/* Mobile Phones */
 @media (max-width: 599px) {
     nav {
         flex-direction: column;
@@ -700,11 +716,21 @@
         height: auto;
         width: 100%;
     }
-    .Projects img,
-    .Projects video {
-        width: 100%;
-        height: auto;
-    }
+    .project-grid {
+  grid-template-columns: 1fr; /* all items in one column */
+  padding: 20px;
+  gap: 25px;
+  justify-items: center;
+}
+
+.Projects video,
+.Projects img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 .About{
     height: auto;
     /* width: auto; */
@@ -800,7 +826,6 @@
         color: #f1f5f9;
         font-family: "Nova Square", system-ui;
     }
-
     @keyframes gradientFlow {
         0% {
             background-position: 0% 50%;
@@ -884,6 +909,8 @@
                 <div class="aboutimg">
                     <img src="about.png">
                 </div>
+
+                <h2>⭐️ I am also a part of Open Source Club in Scaler School of Technology ⭐️</h2>
             </div>
         </div>
 
